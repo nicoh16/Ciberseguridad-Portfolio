@@ -23,7 +23,7 @@ Análisis completo de vulnerabilidades en Metasploitable 2
 - **Sistemas:** Kali Linux, Windows
 
 ## Contacto
-- **LinkedIn:** [tu-perfil]
+- **LinkedIn:** [..]
 - **Email:** nicohurtado1601@gmail.com
 
 ---
