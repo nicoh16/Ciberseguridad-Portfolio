@@ -19,9 +19,9 @@
 
 ### Escaneo de puertos
 
-Se realizó un escaneo para identificar puertos abiertos:
+Se realizó un escaneo para identificar todos los puertos abiertos:
 
 ```bash
-nmap 10.0.2.6
+nmap -p- 10.0.2.6
 ```
 
