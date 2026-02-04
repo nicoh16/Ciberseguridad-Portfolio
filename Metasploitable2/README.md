@@ -28,7 +28,7 @@ nmap -p- 10.0.2.6
 
 
 ## Análisis de resultado
-Se encontraron varios puertos conocidos por tener vulnerabilidades críticas **FTP (21)**, **TELNET (23)**, y **SAMBA (445**). Para verificar si son explotables, el siguiente paso es hacer un escaneo de **detección de servicios** para conocer que software específico está corriendo y si existen vulnerabilidades conocidas de dichas versiones.
+Se encontraron más de 15 puertos con servicios expuestos. Para empezar, prioricé estos tres conocidos por tener vulnerabilidades críticas **FTP (21)**, **TELNET (23)**, y **SAMBA (445**). Para verificar si son explotables, el siguiente paso es hacer un escaneo de **detección de servicios** para conocer que software específico está corriendo y si existen vulnerabilidades conocidas de dichas versiones.
 
 ```bash
 nmap -p 21,23,445 -sCV 10.0.2.6
@@ -36,8 +36,21 @@ nmap -p 21,23,445 -sCV 10.0.2.6
 
 ![Escaneo de servicios y versiones](./img/escaneo-nmap-servicios.png)
 
-**PUERTO 21**
-Por medio de **msfconsole** se consigue acceso root por medio de un exploit
+### Puerto 21 - FTP (vsftpd 2.3.4)
+
+A partir del escaneo de versiones, se identificó un backdoor en este servicio.
+
+* **Vulnerabilidad:** Backdoor Command Execution (CVE-2011-2523)
+* **Módulo utilizado `exploit/unix/ftp/vsftpd_234_backdoor`
+* **Impacto:** Acceso a root al sistema.
+* **Remediación:** Se recomienda actualizar el servidor FTP, o usar servicios más seguros como SFTP. Además, se debe restringir el acceso a el puerto 21 por medio de un Firewall si no es necesario.
+
 
 ![Explotación puerto 21](./img/msfconsole-ftp.png)
+
+> **Nota:** Como se observa en la captura, tras correr el exploit permitea acceso a root al sistema.
+
+
+
+
 
