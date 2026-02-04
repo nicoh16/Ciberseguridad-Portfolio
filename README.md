@@ -7,7 +7,7 @@ Analista Junior en Ciberseguridad con formación práctica en pentesting, análi
 
 ### Seguridad Ofensiva
 
-#### [Metasploitable 2 - Security Assessment](./metasploitable2/)
+#### [Metasploitable 2 - Security Assessment](./Metasploitable2/)
 Análisis completo de vulnerabilidades en Metasploitable 2
 - Identificación y explotación de vulnerabilidades
 - Herramientas: Metasploit, Nmap, msfvenom
