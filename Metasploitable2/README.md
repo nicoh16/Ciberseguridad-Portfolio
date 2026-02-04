@@ -24,4 +24,4 @@ Se realizó un escaneo para identificar todos los puertos abiertos:
 ```bash
 nmap -p- 10.0.2.6
 ```
-![Escaneo de puertos abiertos](.img/escaneo-nmap.png)
+![Escaneo de puertos abiertos](.Metasploitable2/img/escaneo-nmap.png)
