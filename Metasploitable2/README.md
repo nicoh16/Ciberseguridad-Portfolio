@@ -35,3 +35,9 @@ nmap -p 21,23,445 -sCV 10.0.2.6
 ```
 
 ![Escaneo de servicios y versiones](./img/escaneo-nmap-servicios.png)
+
+**PUERTO 21**
+Por medio de **msfconsole** se consigue acceso root por medio de un exploit
+
+![Explotación puerto 21](./img/msfconsole-ftp.png)
+
