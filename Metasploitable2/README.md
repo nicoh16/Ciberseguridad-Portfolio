@@ -31,10 +31,10 @@ nmap -p- 10.0.2.6
 Se encontraron más de 15 puertos con servicios expuestos. Para verificar si son explotables, el siguiente paso es hacer un escaneo de **detección de servicios** para conocer que software específico está corriendo y si existen vulnerabilidades conocidas de dichas versiones.
 
 ```bash
-nmap -p 21,23,445 -sCV 10.0.2.6
+nmap -p 21 -sCV
 ```
 
-![Escaneo de servicios y versiones](./img/escaneo-nmap-servicios.png)
+![Escaneo de servicios y versiones](./img/escaneo-ftp)
 
 ### Puerto 21 - FTP (vsftpd 2.3.4)
 
