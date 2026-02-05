@@ -24,7 +24,7 @@ Se realizó un escaneo para identificar todos los puertos abiertos:
 ```bash
 nmap -p- 10.0.2.6
 ```
-![Escaneo de puertos abiertos](./img/escaneo-nmap.png)
+![Escaneo de puertos](./img/escaneo-nmap.png)
 
 
 ## Análisis de resultado
@@ -34,7 +34,7 @@ Se encontraron más de 15 puertos con servicios expuestos. Para verificar si son
 nmap -p 21 -sCV
 ```
 
-![Escaneo de servicios y versiones](./img/escaneo-ftp)
+![Escaneo puerto 21](./img/escaneo-ftp.png)
 
 ### Puerto 21 - FTP (vsftpd 2.3.4)
 
@@ -51,7 +51,48 @@ A partir del escaneo de versiones, se identificó un backdoor en este servicio.
 > **Nota:** Como se observa en la captura, tras correr el exploit permitea acceso a root al sistema.
 
 
-### Puerto 22 - SSH (telnet OpenSSH 4.7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Análisis de servicios adicionales
+
+### Puerto 22 - (SSH)
+* **Servicio:** OpenSSH 4.7p1
+* **Vulnerabilidad:** Uso de credenciales débiles y suceptible a ataques de fuerza bruta.
+
+### Puerto 23 (Telnet)
+* **Servcio:** Linux telnetd.
+* **Vulnerabilidad:** Protocolo inseguro, las credenciales viajan por texto plano.
+* **Riesgo:** Se puede sniffear el tráfico y obtener contraseñas.
+
+
+
 
 
 
