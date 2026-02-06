@@ -108,7 +108,7 @@ nmap -p 8180 -sCV 10.0.2.6
 
 Las versiones antiguas de Tomcat vienen con credenciales débiles por defecto. Sabiendo esto, se utilizó un *auxiliary* para comprobarlo. 
 
-![Auxiliary tomcat](./img/msfconsole-tomcat-aux)
+![Auxiliary tomcat](./img/msfconsole-tomcat-aux.png)
 
 Viendo que las credenciales son:
 * **User:** tomcat
