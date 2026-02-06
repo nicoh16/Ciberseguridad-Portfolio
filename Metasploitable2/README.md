@@ -30,13 +30,15 @@ nmap -p- 10.0.2.6
 ## Análisis de resultado
 Se encontraron más de 15 puertos con servicios expuestos. Para verificar si son explotables, el siguiente paso es hacer un escaneo de **detección de servicios** para conocer que software específico está corriendo y si existen vulnerabilidades conocidas de dichas versiones.
 
+
+### Puerto 21 - FTP (vsftpd 2.3.4)
+
 ```bash
 nmap -p 21 -sCV
 ```
 
 ![Escaneo puerto 21](./img/escaneo-ftp.png)
 
-### Puerto 21 - FTP (vsftpd 2.3.4)
 
 A partir del escaneo de versiones, se identificó un backdoor en este servicio.
 
@@ -49,6 +51,25 @@ A partir del escaneo de versiones, se identificó un backdoor en este servicio.
 ![Explotación puerto 21](./img/msfconsole-ftp.png)
 
 > **Nota:** Como se observa en la captura, tras correr el exploit permitea acceso a root al sistema.
+
+
+
+### Puerto 139 / 445 - NetBIOS / Samba
+
+```bash
+nmap -p 139,445 -sCV 10.0.2.6
+```
+![Escaneo puertos 139-445](./img/escaneo-samba.png)
+
+* **Servicio:** Samba 3.0.20-Debian.
+* **Vulnerabilidad:** usermap_script (Ejecución remota de comandos -RCE).
+* **Análisis:** Se utiliza un módulo de Metasploit para explotar una deficiencia en el manejo de nombres de usuario, esto permite inyectar una shell en el servidor.
+* **Impacto:** Crítico. Se obtiene una shell con privilegios de root de forma directa, permite control total del sistema.
+* **Remediación:** Actualización de software a una superior, limitar los accesos al puerto 139 y 445 por medio de firewall, permitiendo solamente IP confiables.
+
+![Explotación puerto 139-445](./img/msfconsole-samba.png)
+
+
 
 
 
