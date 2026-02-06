@@ -88,7 +88,7 @@ nmap -p 6667 -sCV 10.0.2.6
 * **Remediación:** Actualizar el servicio a una versión no afectada.
 
 
-![Explotación puerto 6667](./img/exploit-irc)
+![Explotación puerto 6667](./img/exploit-irc.png)
 
 
 ### Puerto 8180 - Apache / Tomcat
