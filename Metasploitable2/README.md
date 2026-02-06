@@ -78,7 +78,7 @@ nmap -p 139,445 -sCV 10.0.2.6
 nmap -p 6667 -sCV 10.0.2.6
 ```
 
-![Escaneo puerto 6667](.img/escaneo-irc.png)
+![Escaneo puerto 6667](./img/escaneo-irc.png)
 
 
 * **Servicio:** UnrealIRCd 3.2.8.1
@@ -97,7 +97,7 @@ nmap -p 6667 -sCV 10.0.2.6
 nmap -p 8180 -sCV 10.0.2.6
 ```
 
-![Escaneo puerto 8180](.img/escaneo-tomcat.png)
+![Escaneo puerto 8180](./img/escaneo-tomcat.png)
 
 * **Servicio:** Http Apache Tomcat 5.5
 * **Módulos utilizados:** `auxiliary/admin/http/tomcat_administration` - `exploit/multi/http/tomcat_mgr_deploy`
@@ -116,11 +116,11 @@ Viendo que las credenciales son:
 
 Se prueba un exploit para subir un archivo a la web como administrador. Para eso buscamos el exploit `exploit/multi/http/tomcat_mgr_deploy`. Se setea la IP objetivo, user y password dados por el auxiliary anterior, y se setea el payload `java/meterpreter/reverse_http`. Una vez que se inicia el exploit, nos da acceso root al sistema.
 
-![Exploit puerto 8180](.img/tomcat-exploit.png)
+![Exploit puerto 8180](./img/tomcat-exploit.png)
 
 También se puede ingresar al sitio web de forma manual solo con las credenciales de antes, nos dirigimos a `http://10.0.2.6:8180:manager/html` y nos pide usuario y contraseña, una vez que ingresamos los datos, se entra como administrador al sitio, lo que nos permite subir, o descargar archivos.
 
-![Web puerto 8180](.img/tomcat-web.png)
+![Web puerto 8180](./img/tomcat-web.png)
 
 
 
