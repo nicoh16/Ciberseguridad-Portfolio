@@ -12,7 +12,7 @@ Análisis completo de vulnerabilidades en Metasploitable 2
 - Identificación y explotación de vulnerabilidades
 - Herramientas: Metasploit, Nmap, msfvenom
 
-### Análisis Forense
+### [Wireshark - Análisis de tráfico](./Wireshark)
 *En desarrollo...*
 
 ## Habilidades Técnicas
