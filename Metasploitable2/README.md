@@ -50,7 +50,7 @@ A partir del escaneo de versiones, se identificó un backdoor en este servicio.
 
 ![Explotación puerto 21](./img/msfconsole-ftp.png)
 
-> **Nota:** Como se observa en la captura, tras correr el exploit permitea acceso a root al sistema.
+> **Nota:** Como se observa en la captura, tras correr el exploit permite acceso a root al sistema.
 
 
 
