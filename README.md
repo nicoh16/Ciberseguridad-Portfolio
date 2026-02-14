@@ -8,12 +8,17 @@ Analista Junior en Ciberseguridad con formación práctica en pentesting, análi
 ### Seguridad Ofensiva
 
 #### [Metasploitable 2 - Security Assessment](./Metasploitable2/)
-Análisis completo de vulnerabilidades en Metasploitable 2
-- Identificación y explotación de vulnerabilidades
-- Herramientas: Metasploit, Nmap, msfvenom
+**Evaluación de vulnerabilidades y explotación controlada**
+- **Enumeración de servicios críticos:** Identificación de versiones vulnerables (VSFTPD 2.3.4, UnrealIRCD).
+- **Explotación de Backdoors:** Uso de `msfconsole` para obtener acceso remoto y gestión de sesiones.
+- **Post-explotación:** Escalada de privilegios y recolección de información del sistema.
+- **Herramientas:** Metasploit Framework, Nmap (Service Detection), Netcat.
 
 ### [Wireshark - Análisis de tráfico](./Wireshark)
-*En desarrollo...*
+Análisis de detección de escaneo y Footprinting
+* Identificación de escaneo TCP SYN: Captura y análisis de flags (SYN/SYN-ACK/RST) para detectar intentos de descubrimiento de puertos.
+* Detección de OS Fingerprinting: Observación de valores de TTL y Window Size en el tráfico para identificar el Sistema Operativo.
+* Filtrado avanzado: Uso de Display filters específicos para aislar tráfico sospechoso.
 
 ## Habilidades Técnicas
 - **Pentesting:** Metasploit, Nmap, msfvenom
@@ -23,7 +28,7 @@ Análisis completo de vulnerabilidades en Metasploitable 2
 - **Sistemas:** Kali Linux, Windows
 
 ## Contacto
-- **LinkedIn:** [..]
+- **LinkedIn:** [https://www.linkedin.com/in/hurtado-nicolas1818/]
 - **Email:** nicohurtado1601@gmail.com
 
 ---
