@@ -12,7 +12,7 @@ Analista Junior en Ciberseguridad con formación práctica en pentesting, análi
 - **Enumeración de servicios críticos:** Identificación de versiones vulnerables (VSFTPD 2.3.4, UnrealIRCD).
 - **Explotación de Backdoors:** Uso de `msfconsole` para obtener acceso remoto y gestión de sesiones.
 - **Post-explotación:** Escalada de privilegios y recolección de información del sistema.
-- **Herramientas:** Metasploit Framework, Nmap (Service Detection), Netcat.
+- **Herramientas:** Metasploit Framework, Nmap (Service Detection).
 
 ### [Wireshark - Análisis de tráfico](./Wireshark)
 Análisis de detección de escaneo y Footprinting
