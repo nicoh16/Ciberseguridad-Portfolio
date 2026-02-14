@@ -22,7 +22,7 @@ Comando ejecutado desde Kali:
 nmap -sV -A -T4 -p- 10.0.2.7
 ```
 
-[Captura Wireshark con tráfico agresivo](./img/captura-agresivo.png)
+[Captura Wireshark con tráfico agresivo](./img/Captura-agresivo.png)
 
 ## Análisis de la captura:
 
@@ -38,7 +38,7 @@ Comando ejecutado desde Kali:
 nmap -sS -T0 --scan-delay 10000ms --max-rate 50 -p 1-1000 10.0.2.7
 ```
 
-[Captura Wireshark con tráfico silencioso](./img/captura-silenciosa.png)
+[Captura Wireshark con tráfico silencioso](./img/Captura-silenciosa.png)
 
 ## Análisis de la captura:
 
